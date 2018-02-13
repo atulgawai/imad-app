@@ -32,7 +32,7 @@ var articles = {
             </p>
              
         `},
- 'articleThree' : { title:'Article Three | Atul Gawai',
+ 'article-Three' : { title:'Article Three | Atul Gawai',
      heading:'Article Three',
      date:'Feb 15, 2018',
      content:` <p>
@@ -87,13 +87,6 @@ app.get('/:articleName', function(req,res){
     res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/article-two', function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-
-app.get('/article-three', function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
