@@ -42,7 +42,7 @@ var articles = {
         `}
 };
 function createTemplate(data){
- var title= data.title;
+ //var title= data.title;
  var date = data.date;
  var content = data.content;
  var heading = data.heading;
